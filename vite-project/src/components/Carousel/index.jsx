@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import reactImageFinderPicture from "../../images/screenshots/react-image-finder.png";
+import Vintage4me2Picture from "../../images/screenshots/vintage4me2.png";
 import Button from "react-bootstrap/Button";
 import "./style.css"
 function ControlledCarousel() {
@@ -18,9 +19,11 @@ function ControlledCarousel() {
     {
       id: 2,
       title: "Vintage4me2.com",
-      description: "My long standing shopify webstore for my vintage sewing pattern ecommerce business.  Fully Integrated with Facebook, Pinterest, Google and Klaviyo Email CMS",
+      description: "My long standing shopify webstore for my vintage sewing pattern ecommerce business. Fully Integrated with Facebook, Pinterest, Google and Klaviyo Email CMS. Use collections and filters to create a side menu to quickly navigate through many different options. Source code is properietry",
       tech: ["Shopify", "Adobe Photoshop", "APIs", "Klaviyo"],
-      website_url: ""
+      website_url: "https://www.vintage4me2.com/",
+      github_url: "https://www.vintage4me2.com/",
+      imgSrc: Vintage4me2Picture
     }
   ]
   const handleSelect = (selectedIndex) => {
@@ -32,7 +35,7 @@ function ControlledCarousel() {
       {projects.map(({title, id, description, tech, website_url, github_url, imgSrc})=> (
         <Carousel.Item title={title} key={id} imgSrc={imgSrc} description={description} tech={tech} website_url={website_url} github_url={github_url}>
           <img src={imgSrc}></img>
-          <Carousel.Caption style={{backgroundColor: "white"}}>
+          <Carousel.Caption id="caption-box">
           <h3>{title}</h3>
           <p>{description}</p>
           <Button className="carousel-button" variant="dark" target="_blank" href={github_url}>Github Repository</Button>
