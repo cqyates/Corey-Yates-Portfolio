@@ -3,7 +3,7 @@ import "./style.css"
 const Header = () => {
   return (
     <header>
-      <h1>Corey Yates</h1>
+      <h1>Corey Quinn Yates</h1>
       <HeaderNav />
     </header>
   )
