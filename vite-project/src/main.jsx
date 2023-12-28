@@ -11,6 +11,7 @@ import CurrentProjectsPage from './pages/Current';
 import PortfolioPage from './pages/Portfolio';
 import SkillsPage from './pages/Skills';
 import ResumePage from './pages/Resume';
+import StudentsPage from "./pages/Students"
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'resume',
         element: <ResumePage/>,
+      },
+      {
+        path: 'students',
+        element: <StudentsPage />,
       },
     ],
   },
