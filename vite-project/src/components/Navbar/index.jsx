@@ -12,17 +12,11 @@ const HeaderNav = () => {
               <Nav.Link className="nav-link" as={Link} to="/">
                 About Me
               </Nav.Link>
-              <Nav.Link className="nav-link" as={Link} to="/current">
-                Current Projects
-              </Nav.Link>
               <Nav.Link className="nav-link" as={Link} to="/skills">
                 Technical Skills and Certifications
               </Nav.Link>
-              <Nav.Link className="nav-link" as={Link} to="/students">
-               My Featured Students
-              </Nav.Link>
               <Nav.Link className="nav-link" as={Link} to="/portfolio">
-                My Portfolio
+                Featured Projects
               </Nav.Link>
               <Nav.Link className="nav-link" as={Link} to="/resume">
                 Resume

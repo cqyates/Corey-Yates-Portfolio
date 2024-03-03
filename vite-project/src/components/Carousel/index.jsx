@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import reactImageFinderPicture from "../../images/screenshots/react-image-finder.png";
-import Vintage4me2Picture from "../../images/screenshots/vintage4me2.png";
+// import reactImageFinderPicture from "../../images/screenshots/image-finder-clip.png";
+// import Vintage4me2Picture from "../../images/screenshots/vintage4me2.png";
 import Button from "react-bootstrap/Button";
 import "./style.css"
 function ControlledCarousel() {
@@ -14,7 +14,7 @@ function ControlledCarousel() {
       tech: ["React", "RESTful APIs"],
       website_url: "https://cqyates.github.io/react-image-finder/",
       github_url: "https://github.com/cqyates/react-image-finder",
-      imgSrc: reactImageFinderPicture
+      imgSrc: ""
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ function ControlledCarousel() {
       tech: ["Shopify", "Adobe Photoshop", "APIs", "Klaviyo"],
       website_url: "https://www.vintage4me2.com/",
       github_url: "https://www.vintage4me2.com/",
-      imgSrc: Vintage4me2Picture
+      imgSrc: ""
     }
   ]
   const handleSelect = (selectedIndex) => {
@@ -31,10 +31,10 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="dark" activeIndex={index} onSelect={handleSelect}>
+    <Carousel className="carousel-parent" data-bs-theme="dark" activeIndex={index} onSelect={handleSelect}>
       {projects.map(({title, id, description, tech, website_url, github_url, imgSrc})=> (
-        <Carousel.Item title={title} key={id} imgSrc={imgSrc} description={description} tech={tech} website_url={website_url} github_url={github_url}>
-          <img src={imgSrc}></img>
+        <Carousel.Item className="carousel-item" title={title} key={id} imgSrc={imgSrc} description={description} tech={tech} website_url={website_url} github_url={github_url}>
+          <img className="carousel-image" src={imgSrc}></img>
           <Carousel.Caption id="caption-box">
           <h3>{title}</h3>
           <p>{description}</p>

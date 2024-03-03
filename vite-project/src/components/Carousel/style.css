@@ -8,3 +8,7 @@ margin: 4px
   border: 1px solid rgba(128, 128, 128, 0.336);
   box-shadow: 2px 8px 10px gray;
 }
+.carousel-parent {
+  border: 1px solid cyan;
+  height: 100%
+}
