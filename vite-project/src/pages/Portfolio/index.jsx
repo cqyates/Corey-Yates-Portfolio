@@ -1,11 +1,11 @@
 
 import Carousel from "../../components/Carousel"
+import "./style.css"
 const PortfolioPage = () => {
 
   return (
     <>
-      <h3>Portfolio Page</h3>
-      <div id="portolio-container">
+      <div id="portfolio-container">
       <Carousel/>
       </div>
         
